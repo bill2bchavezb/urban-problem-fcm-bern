@@ -1,0 +1,15 @@
+source,target,sign,team_draft,rationale
+Severity,Safety_Risk,+,moderately_strong,A more severe defect generally increases the potential for harm.
+Severity,Service_Disruption,+,moderately_strong,More serious defects are more likely to impair infrastructure or public services.
+Safety_Risk,Service_Disruption,+,weak,A dangerous situation can lead to closures or restrictions that interrupt service.
+Service_Disruption,Safety_Risk,+,weak,"A disrupted service (e.g. failed signal, dark street) can create additional danger."
+Safety_Risk,Residual_Public_Impact,+,moderately_strong,Safety consequences contribute strongly to the impact remaining after mitigation.
+Safety_Risk,Response_Urgency,+,moderately_weak,A serious safety risk can require rapid action even if the wider impact is limited.
+Service_Disruption,Residual_Public_Impact,+,moderately_strong,Significant interruption of access or services increases the impact on the public.
+Population_Exposure,Safety_Risk,+,moderately_weak,More exposed people increase the overall potential for harm.
+Population_Exposure,Residual_Public_Impact,+,moderately_strong,The same defect affects far more people in a busy area than in an isolated one.
+Deterioration,Severity,+,moderately_weak,A worsening condition tends to increase the seriousness of a defect.
+Deterioration,Residual_Public_Impact,+,moderately_weak,An unresolved worsening problem creates greater ongoing consequences.
+Deterioration,Response_Urgency,+,moderately_weak,Evidence that a problem is getting worse supports acting sooner.
+Workaround_Availability,Residual_Public_Impact,-,medium,A safe accessible alternative reduces the impact while the problem remains.
+Residual_Public_Impact,Response_Urgency,+,strong,The greater the remaining impact the more urgent the response.
